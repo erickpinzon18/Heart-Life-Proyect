@@ -14,86 +14,8 @@
           rel="stylesheet">
 </head>
 <body>
-<nav class="navbar navbar-light bg-white  navbar-expand-md">
-    <div class="container">
-        <a class="navbar-brand" href="#">
-            <img src="../assets/img/Logo.png" width="16%"  alt="image">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav3" aria-controls="navbarNav3" aria-expanded="true" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="navbar-collapse collapse " id="navbarNav3" style="">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item dropdown">
 
-                    <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Perfil
-                    </a>
-                    <div class="dropdown-menu dropdown-menu-right p-3" aria-labelledby="navbarDropdown" style="min-width:300px">
-                        <h6>Nombre de Usuario</h6>
-                        <div class="dropdown-divider"></div>
-                        <ul class="shopping-cart-items pt-2 pl-0">
-                            <li class="row mt-3">
-                                <div class="col-4">
-                                    <img src=" https://dummyimage.com/50/5fa9f8/ffffff" alt="" class="img-fluid d-none d-md-block rounded mb-2 shadow ">
-                                </div>
-                                <div class="col-8">
-                                    <h6>
-                                        <a href="#">Emergencia</a>
-                                    </h6>
-                                    <span class="text-muted">Completa tus datos para una mejor solucion</span>
-                                </div>
-                            </li>
-                            <li class="row mt-3">
-                                <div class="col-4">
-                                    <img src=" https://dummyimage.com/50/5fa9f8/ffffff" alt="" class="img-fluid d-none d-md-block rounded mb-2 shadow ">
-                                </div>
-                                <div class="col-8">
-                                    <h6>
-                                        <a href="#">Contactos</a>
-                                    </h6>
-                                    <span class="text-muted">Agrega o modifica contactos en caso de emergencia</span>
-                                </div>
-                            </li>
-                            <li class="row mt-3">
-                                <div class="col-4">
-                                    <img src=" https://dummyimage.com/50/5fa9f8/ffffff" alt="" class="img-fluid d-none d-md-block rounded mb-2 shadow ">
-                                </div>
-                                <div class="col-8">
-                                    <h6>
-                                        <a [routerLink]="['buy']">Comprar</a>
-                                    </h6>
-                                    <span class="text-muted">Comprar dispositivo para salvar vidas</span>
-                                </div>
-                            </li>
-                        </ul>
-                        <a [routerLink]="['profile']" class="btn btn-md btn-block btn-primary mt-3" style="margin: 0;">Ver Perfil</a>
-                    </div>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Inicio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="buy.html">Comprar</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="about.html">Acerca</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="about-us.html">Nosotros</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="login.html">Iniciar Sesion</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="register.html">Registro</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>
-
-<div class="container main-container">
+<div>
 
     <!-- Page Wrapper -->
     <div id="wrapper">
@@ -249,7 +171,7 @@
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <span class="mr-2 d-none d-lg-inline text-gray-600 small">User</span>
-                                <img class="img-profile rounded-circle" src="">
+                                <img class="img-profile rounded-circle" src="https://img.icons8.com/ios/50/undefined/user--v1.png">
                             </a>
                         </li>
                     </ul>
@@ -259,65 +181,10 @@
             <!-- End of Content Wrapper -->
         </div>
     </div>
-    <br>
 
 
 </div>
 
-<footer class="pt-5 pb-5  bg-dark text-light">
-    <div class="container">
-        <div class="row align-items-top text-center text-md-start">
-            <div class="col-12 col-sm-6 col-md-4">
-                <h3><strong>Country A</strong></h3>
-                <p>Street Address
-                    <br>Contact Name
-                </p>
-                <p>+44 800 400 0000</p>
-                <p>
-                    <a href="#">infob@bootstraptor.com</a>
-                </p>
-            </div>
-            <div class="col-12 col-sm-6 col-md-4 mt-4 mt-sm-0">
-                <h3><strong>Country B</strong></h3>
-                <p>Street Address 100
-                    <br>Contact Name
-                </p>
-                <p>+13 800 312 0000</p>
-                <p>
-                    <a href="#">infob@bootstraptor.com</a>
-                </p>
-            </div>
-            <div class="col-12 col-md-4 mt-5 mt-md-0 text-md-start">
-                <h3><strong>About Us</strong></h3>
-                <p>Bootstraptor provides high quality assets for your business. We
-                    help entrepreneurs with great ideas achieving their goals
-                    faster.</p>
-                <p class="text-h3">
-                    <a href="#">
-                        <i class="fab fa-twitter" aria-hidden="true"></i>
-                    </a>&nbsp;&nbsp;
-                    <a href="#">
-                        <i class="fab fa-facebook" aria-hidden="true"></i>
-                    </a>&nbsp;&nbsp;
-                    <a href="#">
-                        <i class="fab fa-instagram" aria-hidden="true"></i>
-                    </a>&nbsp;&nbsp;
-                    <a href="#">
-                        <i class="fab fa-pinterest" aria-hidden="true"></i>
-                    </a>&nbsp;&nbsp;
-                    <a href="#">
-                        <i class="fab fa-google" aria-hidden="true"></i>
-                    </a>
-                </p>
-            </div>
-        </div>
-        <div class="row mt-5">
-            <div class="col text-center">
-                © 2021 Bootstraptor. All Rights Reserved
-            </div>
-        </div>
-    </div>
-</footer>
 <script
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
