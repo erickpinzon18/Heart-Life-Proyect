@@ -20,6 +20,39 @@
 
 <body class="bg-gradient-primary">
 
+
+<script>
+    window.fbAsyncInit = function() {
+        FB.init({
+            appId      : '3297308237213246',
+            cookie     : true,
+            xfbml      : true,
+            version    : 'v8.0'
+        });
+
+        FB.AppEvents.logPageView();
+
+    };
+
+    (function(d, s, id){
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) {return;}
+        js = d.createElement(s); js.id = id;
+        js.src = "https://connect.facebook.net/en_US/sdk.js";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+
+    function onLogin () {
+        FB.login((response) => {
+            if (response.authResponse) {
+                FB.api("/me?fields=email, name, picture", (response) => {
+                    console.log(response);
+                })
+            }
+        })
+    }
+</script>
+
 <div class="container">
 
     <!-- Outer Row -->
@@ -63,9 +96,9 @@
                                     <a href="index.html" class="btn btn-google btn-user btn-block">
                                         <i class="fab fa-google fa-fw"></i> Login with Google
                                     </a>
-                                    <a href="index.html" class="btn btn-facebook btn-user btn-block">
+                                    <div class="btn btn-facebook btn-user btn-block" onclick="onLogin();">
                                         <i class="fab fa-facebook-f fa-fw"></i> Login with Facebook
-                                    </a>
+                                    </div>
                                 </form>
                                 <hr>
                                 <div class="text-center">
